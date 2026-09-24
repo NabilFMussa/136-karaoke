@@ -1,0 +1,91 @@
+.stream-app { max-width: 1200px; margin: auto; padding: 28px 40px; background: #121212; min-height: 100vh; color: #eee; }
+.stream-app a { color: inherit; }
+.stream-app header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 32px; border-bottom: 1px solid #303030; }
+.wordmark { font-size: 22px; font-weight: 750; text-decoration: none; letter-spacing: -.04em; }
+.online-label, .accent { color: #70dfaa; letter-spacing: .16em; font-size: 12px; font-weight: 700; }
+.search-intro { padding: 58px 0 35px; }
+.stream-app h1 { font-size: clamp(40px, 7vw, 80px); line-height: 1.05; letter-spacing: -.05em; margin: 16px 0 20px; }
+.stream-app p { line-height: 1.6; color: #b3b3b3; }
+.stream-app form { display: flex; gap: 12px; margin-top: 28px; max-width: 750px; }
+.stream-app input { width: 100%; min-width: 0; background: #242424; border: 1px solid #555; color: white; padding: 16px 22px; border-radius: 30px; font-size: 17px; }
+.stream-app button, .play-link { background: #70dfaa; color: #10251a !important; border: none; border-radius: 30px; padding: 14px 25px; font-weight: 700; cursor: pointer; text-decoration: none; white-space: nowrap; }
+.stream-app button:disabled { opacity: .5; cursor: default; }
+.stream-app :focus-visible { outline: 3px solid #70dfaa; outline-offset: 4px; }
+.stream-app .muted { font-size: 13px; color: #999; }
+.empty-state { padding: 45px 0; }
+.track-list { margin-top: 20px; }
+.track { display: flex; gap: 24px; align-items: center; padding: 20px 12px; border-bottom: 1px solid #292929; }
+.track:hover { background: #202020; }
+.track-highlighted { border-left: 3px solid #70dfaa; padding-left: 9px; background: #17211b; }
+.channel-badge { display: inline-block; margin-top: 8px; padding: 4px 9px; border-radius: 999px; background: #2b4938; color: #a5f2c5; font-size: 11px; font-weight: 700; letter-spacing: .02em; }
+.channel-badge-popular { background: #30374b; color: #bfceff; }
+.track-number { color: #888; font-variant-numeric: tabular-nums; }
+.track > div { flex: 1; min-width: 0; }
+.track h2 { font-size: 19px; margin: 0; overflow-wrap: anywhere; }
+.track p { margin: 5px 0 0; font-size: 14px; }
+.track p span { color: #888; }
+.stream-app footer { padding: 40px 0 10px; margin-top: 50px; line-height: 1.8; text-transform: none; letter-spacing: 0; color: #999; font-size: 13px; }
+.player-page h1 { font-size: clamp(32px, 5vw, 54px); margin-top: 32px; }
+.video-frame { aspect-ratio: 16 / 9; min-height: 200px; background: black; margin: 24px 0; }
+.video-frame iframe { width: 100%; height: 100%; border: 0; }
+.results-section { scroll-margin-top: 24px; }
+.recent-section { margin: 4px 0 48px; }
+.recent-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 18px; }
+.recent-heading .accent { margin: 0 0 4px; }
+.recent-heading h2 { font-size: clamp(26px, 3.5vw, 38px); letter-spacing: -.035em; margin: 0; }
+.stream-app .recent-heading button { padding: 8px 16px; background: #292929; border: 1px solid #444; color: #eee !important; }
+.recent-list { display: flex; gap: 14px; overflow-x: auto; padding: 4px 4px 14px; scrollbar-color: #555 #191919; }
+.recent-card { display: grid; flex: 0 0 220px; gap: 6px; min-width: 0; padding: 18px; border-radius: 12px; background: #1d1d1d; text-decoration: none; }
+.recent-card:hover { background: #2a2a2a; }
+.recent-card strong, .recent-card span, .recent-card small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.recent-card strong { font-size: 15px; }
+.recent-card span:not(.recent-play) { color: #aaa; font-size: 13px; }
+.recent-card small { color: #888; font-size: 12px; }
+.recent-card .recent-play { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 10px; border-radius: 50%; background: #70dfaa; color: #10251a; }
+.spotify-section { margin: 4px 0 48px; }
+.spotify-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.spotify-heading .accent { margin: 0 0 4px; }
+.spotify-heading h2 { font-size: clamp(26px, 3.5vw, 38px); letter-spacing: -.035em; margin: 0; }
+.spotify-heading img { display: block; width: 100px; height: auto; }
+.spotify-heading-actions { display: flex; align-items: center; gap: 16px; }
+.stream-app .spotify-heading-actions button { padding: 9px 16px; background: #292929; border: 1px solid #444; color: #eee !important; }
+.spotify-section > p { font-size: 14px; margin: 7px 0 18px; }
+.spotify-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.spotify-card { min-width: 0; display: grid; align-content: start; gap: 10px; padding: 16px; border: 1px solid #333; border-radius: 12px; background: #1d1d1d; }
+.spotify-cover { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; border-radius: 8px; }
+.spotify-card h3 { margin: 0; font-size: 17px; overflow-wrap: anywhere; }
+.spotify-genre { display: inline-block; margin-bottom: 8px; padding: 4px 9px; border-radius: 999px; background: #2b4938; color: #a5f2c5; font-size: 11px; font-weight: 700; }
+.spotify-card p { margin: 4px 0; font-size: 14px; color: #ddd; overflow-wrap: anywhere; }
+.spotify-card small { color: #aaa; overflow-wrap: anywhere; }
+.spotify-card a { font-size: 13px; text-decoration: underline; }
+.stream-app .spotify-card button { white-space: normal; padding: 11px 16px; }
+.queue-section { margin: 0 0 52px; padding: 24px 26px; border: 1px solid #303030; border-radius: 16px; background: linear-gradient(135deg, #1d1d1d, #151515); }
+.queue-heading { display: flex; justify-content: space-between; align-items: end; gap: 22px; margin-bottom: 18px; }
+.queue-heading .accent { margin: 0 0 5px; }
+.queue-heading h2 { margin: 0; font-size: clamp(25px, 3.2vw, 34px); letter-spacing: -.035em; }
+.queue-heading h2 span { margin-left: 8px; padding: 3px 9px; border-radius: 20px; background: #303030; color: #bbb; font-size: 14px; vertical-align: middle; }
+.singer-name { display: flex; align-items: center; gap: 10px; color: #aaa; font-size: 13px; }
+.stream-app .singer-name input { width: 190px; padding: 10px 15px; border-radius: 8px; font-size: 14px; }
+.queue-empty { margin: 0; padding: 14px 0 3px; }
+.queue-message { margin: 10px 0; }
+.queue-list { list-style: none; padding: 0; margin: 0; }
+.queue-entry { display: flex; align-items: center; gap: 16px; padding: 14px 4px; border-top: 1px solid #303030; }
+.queue-position { width: 30px; color: #70dfaa; font-variant-numeric: tabular-nums; }
+.queue-song { display: grid; flex: 1; min-width: 0; gap: 3px; }
+.queue-song strong, .queue-song span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.queue-song strong { color: #eee; font-size: 15px; }
+.queue-song span { color: #aaa; font-size: 13px; }
+.queue-song .queue-singer { color: #70dfaa; }
+.queue-actions { display: flex; gap: 7px; }
+.stream-app .queue-actions button { min-width: 36px; padding: 8px; border: 1px solid #444; border-radius: 8px; background: #292929; color: #eee !important; }
+.stream-app .queue-actions button:hover:not(:disabled) { background: #3b3b3b; }
+.stream-app .queue-actions button.remove-entry { font-size: 19px; line-height: 18px; }
+.track-actions { display: flex; align-items: center; gap: 12px; }
+.stream-app .track-actions button { padding: 12px 18px; }
+.preview-link { color: #bbb !important; font-size: 13px; text-decoration: none; }
+.preview-link:hover { color: white !important; text-decoration: underline; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media(max-width: 600px) { .stream-app { padding: 20px 16px; } .stream-app form { flex-direction: column; } .online-label { font-size: 9px; } .track { gap: 12px; padding: 18px 0; } .track-number { display: none; } .play-link { padding: 12px 18px; } .queue-section { padding: 18px 14px; } .queue-heading { align-items: start; flex-direction: column; } .singer-name { width: 100%; justify-content: space-between; } .stream-app .singer-name input { width: min(62%, 220px); } .queue-entry { gap: 9px; } .queue-position { width: 22px; } .stream-app .queue-actions button { min-width: 32px; padding: 6px; } .track-actions { flex-direction: column-reverse; align-items: stretch; gap: 8px; } .stream-app .track-actions button { padding: 10px 12px; font-size: 12px; } .preview-link { text-align: center; } }
+@media(max-width: 800px) { .spotify-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media(max-width: 420px) { .spotify-list { grid-template-columns: 1fr; } }
+@media(max-width: 600px) { .spotify-heading { align-items: start; } .spotify-heading-actions { flex-direction: column-reverse; align-items: end; gap: 8px; } }
